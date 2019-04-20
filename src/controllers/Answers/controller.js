@@ -1,5 +1,7 @@
+import { SEND } from '../response';
+
 export const fetchAll = (req, res, next) => {
-  res.send({
+  SEND(res, false, {
     message: 'am from controller, API is working'
   });
 };
