@@ -19,7 +19,9 @@ mongoose.connect(mongoUri);
 
 // Send message for default URL
 app.get('/', (req, res) =>
-  res.send(`Node with Express is running on port ${port}`)
+  res.send(
+    `Node with Express is running on port ${port} try using "http://localhost:1001/answers"`
+  )
 );
 
 // Launch app to listen to specified port

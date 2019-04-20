@@ -1,5 +1,6 @@
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+import { Schema } from 'mongoose';
+import Questions from '../Questions'
+
 const ObjectId = Schema.Types.ObjectId;
 
 const schema = new Schema({
@@ -13,7 +14,7 @@ const schema = new Schema({
   },
   questionId: {
     type: ObjectId,
-    ref: 'Question'
+    ref: Questions
   },
   createdAt: {
     type: Date,
@@ -24,4 +25,4 @@ const schema = new Schema({
   }
 });
 
-module.exports = { schema };
+export default schema;

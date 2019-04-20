@@ -1,9 +1,9 @@
 import { Router } from 'express';
 
-import ReferMe from '../controllers/ReferMe';
+import Answers from '../controllers/Answers';
 
 const router = new Router();
 
-router.use('/referMe', ReferMe);
+router.use('/answers', Answers);
 
 export default router;

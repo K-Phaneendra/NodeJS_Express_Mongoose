@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js"
   },
-  "author": "Phaneendra-K",
+  "author": "https://github.com/K-Phaneendra",
   "license": "ISC",
   "dependencies": {
     "babel-cli": "^6.26.0",
